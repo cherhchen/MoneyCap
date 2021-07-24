@@ -233,7 +233,8 @@ def calculate_recommendation(question):
     sentence = "Your recommended savings based on the amount you entered is $" + str(recommended_savings)
     recommendation_sentence = tk.Label(advice_frame,text=sentence, anchor="n")
     recommendation_sentence.place(relx=0.25, rely=0.6, relheight=0.04, relwidth=0.5)
-# About Button
+    
+# Advice Button
 advice_frame = tk.Frame(root, bg= '#32739c')
 advice_button = Button(title_frame, text="Advice", command=go_advice, highlightbackground='#C6FFBD')
 advice_button.place(relx=0.78, rely=0.4)
@@ -307,7 +308,7 @@ link4 = Label(linksFrame2, text = "What Car Payment Can You Afford?", fg = "blue
 link4.pack(pady=5)
 link4.bind("<Button-1>", lambda e: callback("https://www.nerdwallet.com/article/loans/auto-loans/much-car-payment"))
 
-# Link 5 - What Car Payment Can You Afford?
+# Link 5 - 5 Ways Teens Can Start Building Credit Right Now
 link5 = Label(linksFrame2, text = "5 Ways Teens Can Start Building Credit Right Now", fg = "blue", cursor = "hand2", font=('Arial', 16))
 link5.pack(pady=5)
 link5.bind("<Button-1>", lambda e: callback("https://www.credit.com/blog/how-high-school-students-can-start-building-credit-asap-166771/"))
